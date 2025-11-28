@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ai-chat-api
+  ai:
+    openai:
+      api-key: ${OPEN}
