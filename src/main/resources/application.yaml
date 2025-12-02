@@ -4,3 +4,17 @@ spring:
   ai:
     openai:
       api-key: ${OPEN}
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: "never"
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+    url: "jdbc:mysql://localhost:3306/mydatabase?useSSL=false&allowPublicKeyRetrieval=true"
+    username: "myuser"
+    password: "secret"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
