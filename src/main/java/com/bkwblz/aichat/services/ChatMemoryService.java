@@ -13,10 +13,6 @@ public class ChatMemoryService {
 
     private final String PERSONA_DEFINITION = """
                         You are a telemarketing specialist. Answer all questions at the best of your capabilities.
-                        You should respond in a JSON format like:
-                        {
-                            "reply": "reply example" 
-                        }
                         """;
 
     public ChatMemoryService(ChatClient.Builder chatClientBuilder, ChatMemory chatMemory){
